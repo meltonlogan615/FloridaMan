@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320F348C27D87DB60064052C /* NoFloridaManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320F348B27D87DB60064052C /* NoFloridaManViewController.swift */; };
+		320F348E27D87DDC0064052C /* NoFloridaManView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320F348D27D87DDC0064052C /* NoFloridaManView.swift */; };
+		320F349127D9D41C0064052C /* Blackbor-6Y806.otf in Resources */ = {isa = PBXBuildFile; fileRef = 320F349027D9D41C0064052C /* Blackbor-6Y806.otf */; };
+		320F349327D9D4410064052C /* Graffitipaintbrush-21Jv.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 320F349227D9D4410064052C /* Graffitipaintbrush-21Jv.ttf */; };
+		324D0FC727C311AC0052E62A /* JSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D0FC627C311AC0052E62A /* JSONParsing.swift */; };
+		324D0FC927C311E90052E62A /* NetworkAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D0FC827C311E90052E62A /* NetworkAccess.swift */; };
+		324D0FCB27C3120A0052E62A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D0FCA27C3120A0052E62A /* EndPoints.swift */; };
+		324D0FCD27C312900052E62A /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D0FCC27C312900052E62A /* DataProvider.swift */; };
+		324D0FCF27C312C90052E62A /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D0FCE27C312C90052E62A /* NetworkProvider.swift */; };
+		324D0FD127C313190052E62A /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D0FD027C313190052E62A /* ArticleModel.swift */; };
+		324D0FD327C42AB30052E62A /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D0FD227C42AB30052E62A /* ArticleViewController.swift */; };
+		324D0FD527C4B2A80052E62A /* Glyphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D0FD427C4B2A80052E62A /* Glyphs.swift */; };
+		324D100427CD35640052E62A /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D100327CD35640052E62A /* TabViewController.swift */; };
+		324D100627CD370D0052E62A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D100527CD370D0052E62A /* SettingsViewController.swift */; };
+		324D100827CD3DF50052E62A /* DateSearchResultsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D100727CD3DF50052E62A /* DateSearchResultsTableView.swift */; };
+		324D100A27CD3E0C0052E62A /* DateSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D100927CD3E0C0052E62A /* DateSearchViewController.swift */; };
+		324D100C27CD3E170052E62A /* DateSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D100B27CD3E170052E62A /* DateSearchView.swift */; };
+		324D101127CE66350052E62A /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D101027CE66350052E62A /* SettingsRow.swift */; };
+		324D101A27D2AE1E0052E62A /* SettingsLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D101927D2AE1E0052E62A /* SettingsLinkViewController.swift */; };
+		324D101D27D2F4B30052E62A /* SettingsLabelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D101C27D2F4B30052E62A /* SettingsLabelRow.swift */; };
+		32AB12E227BF5A3A00515D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB12E127BF5A3A00515D5F /* AppDelegate.swift */; };
+		32AB12EB27BF5A3B00515D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AB12EA27BF5A3B00515D5F /* Assets.xcassets */; };
+		32AB12EE27BF5A3B00515D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AB12EC27BF5A3B00515D5F /* LaunchScreen.storyboard */; };
+		32AB12FD27BF5B6A00515D5F /* ArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB12FC27BF5B6A00515D5F /* ArticleTableViewController.swift */; };
+		32AB130127BF5C2900515D5F /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB130027BF5C2900515D5F /* ArticleCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		320F348B27D87DB60064052C /* NoFloridaManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFloridaManViewController.swift; sourceTree = "<group>"; };
+		320F348D27D87DDC0064052C /* NoFloridaManView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFloridaManView.swift; sourceTree = "<group>"; };
+		320F349027D9D41C0064052C /* Blackbor-6Y806.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blackbor-6Y806.otf"; sourceTree = "<group>"; };
+		320F349227D9D4410064052C /* Graffitipaintbrush-21Jv.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graffitipaintbrush-21Jv.ttf"; sourceTree = "<group>"; };
+		324D0FC627C311AC0052E62A /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
+		324D0FC827C311E90052E62A /* NetworkAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAccess.swift; sourceTree = "<group>"; };
+		324D0FCA27C3120A0052E62A /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		324D0FCC27C312900052E62A /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		324D0FCE27C312C90052E62A /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		324D0FD027C313190052E62A /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		324D0FD227C42AB30052E62A /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		324D0FD427C4B2A80052E62A /* Glyphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glyphs.swift; sourceTree = "<group>"; };
+		324D100327CD35640052E62A /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		324D100527CD370D0052E62A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		324D100727CD3DF50052E62A /* DateSearchResultsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSearchResultsTableView.swift; sourceTree = "<group>"; };
+		324D100927CD3E0C0052E62A /* DateSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSearchViewController.swift; sourceTree = "<group>"; };
+		324D100B27CD3E170052E62A /* DateSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSearchView.swift; sourceTree = "<group>"; };
+		324D101027CE66350052E62A /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
+		324D101927D2AE1E0052E62A /* SettingsLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinkViewController.swift; sourceTree = "<group>"; };
+		324D101C27D2F4B30052E62A /* SettingsLabelRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelRow.swift; sourceTree = "<group>"; };
+		32AB12DE27BF5A3A00515D5F /* FloridaManToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloridaManToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AB12E127BF5A3A00515D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32AB12EA27BF5A3B00515D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32AB12ED27BF5A3B00515D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32AB12EF27BF5A3B00515D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AB12FC27BF5B6A00515D5F /* ArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewController.swift; sourceTree = "<group>"; };
+		32AB130027BF5C2900515D5F /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32AB12DB27BF5A3A00515D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320F348F27D9D4010064052C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				320F349227D9D4410064052C /* Graffitipaintbrush-21Jv.ttf */,
+				320F349027D9D41C0064052C /* Blackbor-6Y806.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		324D0FC127C311480052E62A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				324D0FC527C311940052E62A /* EndPoints */,
+				324D0FC427C311880052E62A /* NetworkAccess */,
+				324D0FC327C311810052E62A /* Parsing */,
+				324D0FC227C311700052E62A /* DataProvider */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		324D0FC227C311700052E62A /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				324D0FCC27C312900052E62A /* DataProvider.swift */,
+				324D0FCE27C312C90052E62A /* NetworkProvider.swift */,
+			);
+			name = DataProvider;
+			sourceTree = "<group>";
+		};
+		324D0FC327C311810052E62A /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				324D0FC627C311AC0052E62A /* JSONParsing.swift */,
+			);
+			name = Parsing;
+			sourceTree = "<group>";
+		};
+		324D0FC427C311880052E62A /* NetworkAccess */ = {
+			isa = PBXGroup;
+			children = (
+				324D0FC827C311E90052E62A /* NetworkAccess.swift */,
+			);
+			name = NetworkAccess;
+			sourceTree = "<group>";
+		};
+		324D0FC527C311940052E62A /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				324D0FCA27C3120A0052E62A /* EndPoints.swift */,
+			);
+			name = EndPoints;
+			sourceTree = "<group>";
+		};
+		324D101227D053150052E62A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				324D100527CD370D0052E62A /* SettingsViewController.swift */,
+				324D101927D2AE1E0052E62A /* SettingsLinkViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		324D101327D0532A0052E62A /* TodayViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32AB12FC27BF5B6A00515D5F /* ArticleTableViewController.swift */,
+				324D0FD227C42AB30052E62A /* ArticleViewController.swift */,
+			);
+			name = TodayViewControllers;
+			sourceTree = "<group>";
+		};
+		324D101427D0534C0052E62A /* SearchViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				324D100927CD3E0C0052E62A /* DateSearchViewController.swift */,
+				324D100727CD3DF50052E62A /* DateSearchResultsTableView.swift */,
+			);
+			name = SearchViewControllers;
+			sourceTree = "<group>";
+		};
+		324D101527D0536C0052E62A /* System */ = {
+			isa = PBXGroup;
+			children = (
+				324D100327CD35640052E62A /* TabViewController.swift */,
+				320F348B27D87DB60064052C /* NoFloridaManViewController.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		324D101627D0538F0052E62A /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				32AB130027BF5C2900515D5F /* ArticleCell.swift */,
+				320F348D27D87DDC0064052C /* NoFloridaManView.swift */,
+			);
+			name = Elements;
+			sourceTree = "<group>";
+		};
+		324D101727D053A20052E62A /* SettingsViews */ = {
+			isa = PBXGroup;
+			children = (
+				324D101027CE66350052E62A /* SettingsRow.swift */,
+				324D101C27D2F4B30052E62A /* SettingsLabelRow.swift */,
+			);
+			name = SettingsViews;
+			sourceTree = "<group>";
+		};
+		324D101827D053B60052E62A /* SearchViews */ = {
+			isa = PBXGroup;
+			children = (
+				324D100B27CD3E170052E62A /* DateSearchView.swift */,
+			);
+			name = SearchViews;
+			sourceTree = "<group>";
+		};
+		32AB12D527BF5A3A00515D5F = {
+			isa = PBXGroup;
+			children = (
+				32AB12E027BF5A3A00515D5F /* FloridaManToday */,
+				32AB12DF27BF5A3A00515D5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32AB12DF27BF5A3A00515D5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32AB12DE27BF5A3A00515D5F /* FloridaManToday.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32AB12E027BF5A3A00515D5F /* FloridaManToday */ = {
+			isa = PBXGroup;
+			children = (
+				32AB12FB27BF5B2F00515D5F /* Models */,
+				32AB12FA27BF5B2800515D5F /* Views */,
+				32AB12F627BF5AF800515D5F /* Controllers */,
+				32AB12F527BF5A5600515D5F /* SupportFiles */,
+				324D0FC127C311480052E62A /* Networking */,
+			);
+			path = FloridaManToday;
+			sourceTree = "<group>";
+		};
+		32AB12F527BF5A5600515D5F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				320F348F27D9D4010064052C /* Fonts */,
+				32AB12E127BF5A3A00515D5F /* AppDelegate.swift */,
+				32AB12EA27BF5A3B00515D5F /* Assets.xcassets */,
+				32AB12EC27BF5A3B00515D5F /* LaunchScreen.storyboard */,
+				32AB12EF27BF5A3B00515D5F /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		32AB12F627BF5AF800515D5F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				324D101327D0532A0052E62A /* TodayViewControllers */,
+				324D101427D0534C0052E62A /* SearchViewControllers */,
+				324D101227D053150052E62A /* Settings */,
+				324D101527D0536C0052E62A /* System */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		32AB12FA27BF5B2800515D5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				324D101627D0538F0052E62A /* Elements */,
+				324D101827D053B60052E62A /* SearchViews */,
+				324D101727D053A20052E62A /* SettingsViews */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		32AB12FB27BF5B2F00515D5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				324D0FD027C313190052E62A /* ArticleModel.swift */,
+				324D0FD427C4B2A80052E62A /* Glyphs.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32AB12DD27BF5A3A00515D5F /* FloridaManToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AB12F227BF5A3B00515D5F /* Build configuration list for PBXNativeTarget "FloridaManToday" */;
+			buildPhases = (
+				32AB12DA27BF5A3A00515D5F /* Sources */,
+				32AB12DB27BF5A3A00515D5F /* Frameworks */,
+				32AB12DC27BF5A3A00515D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloridaManToday;
+			productName = FloridaManToday;
+			productReference = 32AB12DE27BF5A3A00515D5F /* FloridaManToday.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32AB12D627BF5A3A00515D5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					32AB12DD27BF5A3A00515D5F = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 32AB12D927BF5A3A00515D5F /* Build configuration list for PBXProject "FloridaManToday" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32AB12D527BF5A3A00515D5F;
+			productRefGroup = 32AB12DF27BF5A3A00515D5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32AB12DD27BF5A3A00515D5F /* FloridaManToday */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32AB12DC27BF5A3A00515D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320F349127D9D41C0064052C /* Blackbor-6Y806.otf in Resources */,
+				32AB12EE27BF5A3B00515D5F /* LaunchScreen.storyboard in Resources */,
+				32AB12EB27BF5A3B00515D5F /* Assets.xcassets in Resources */,
+				320F349327D9D4410064052C /* Graffitipaintbrush-21Jv.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32AB12DA27BF5A3A00515D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324D0FD527C4B2A80052E62A /* Glyphs.swift in Sources */,
+				324D0FC927C311E90052E62A /* NetworkAccess.swift in Sources */,
+				324D101127CE66350052E62A /* SettingsRow.swift in Sources */,
+				32AB130127BF5C2900515D5F /* ArticleCell.swift in Sources */,
+				320F348C27D87DB60064052C /* NoFloridaManViewController.swift in Sources */,
+				324D100C27CD3E170052E62A /* DateSearchView.swift in Sources */,
+				324D0FCF27C312C90052E62A /* NetworkProvider.swift in Sources */,
+				324D100A27CD3E0C0052E62A /* DateSearchViewController.swift in Sources */,
+				324D0FCD27C312900052E62A /* DataProvider.swift in Sources */,
+				324D0FC727C311AC0052E62A /* JSONParsing.swift in Sources */,
+				324D0FD327C42AB30052E62A /* ArticleViewController.swift in Sources */,
+				324D101D27D2F4B30052E62A /* SettingsLabelRow.swift in Sources */,
+				324D100827CD3DF50052E62A /* DateSearchResultsTableView.swift in Sources */,
+				324D100627CD370D0052E62A /* SettingsViewController.swift in Sources */,
+				324D101A27D2AE1E0052E62A /* SettingsLinkViewController.swift in Sources */,
+				324D0FCB27C3120A0052E62A /* EndPoints.swift in Sources */,
+				324D0FD127C313190052E62A /* ArticleModel.swift in Sources */,
+				320F348E27D87DDC0064052C /* NoFloridaManView.swift in Sources */,
+				32AB12FD27BF5B6A00515D5F /* ArticleTableViewController.swift in Sources */,
+				32AB12E227BF5A3A00515D5F /* AppDelegate.swift in Sources */,
+				324D100427CD35640052E62A /* TabViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32AB12EC27BF5A3B00515D5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32AB12ED27BF5A3B00515D5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32AB12F027BF5A3B00515D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32AB12F127BF5A3B00515D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32AB12F327BF5A3B00515D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VR7223ZYQY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FloridaManToday/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meltonlogan.FloridaManToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		32AB12F427BF5A3B00515D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VR7223ZYQY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FloridaManToday/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.meltonlogan.FloridaManToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32AB12D927BF5A3A00515D5F /* Build configuration list for PBXProject "FloridaManToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AB12F027BF5A3B00515D5F /* Debug */,
+				32AB12F127BF5A3B00515D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AB12F227BF5A3B00515D5F /* Build configuration list for PBXNativeTarget "FloridaManToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AB12F327BF5A3B00515D5F /* Debug */,
+				32AB12F427BF5A3B00515D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32AB12D627BF5A3A00515D5F /* Project object */;
+}
