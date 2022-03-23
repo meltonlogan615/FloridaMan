@@ -17,13 +17,13 @@ class ArticleTableViewController: UITableViewController {
   let today = Date()
   let formatter = DateFormatter()
   
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.title = "Today"
     navigationController?.navigationBar.prefersLargeTitles = true
-    
-    view.backgroundColor = .systemGray5
+    view.backgroundColor = UIColor(named: "FM-Blue")
 
     tableView.register(ArticleCell.self, forCellReuseIdentifier: "cell")
     tableView.rowHeight = UITableView.automaticDimension
@@ -80,8 +80,8 @@ extension ArticleTableViewController {
   }
 }
 
+// Getting articles from JSON
 extension ArticleTableViewController {
-  // Getting articles from JSON
   func getFMArticles() {
     dataprovider.getArticle(for: "") { [weak self] (floridaMan: Result<[Article], Error>) in
       guard let self = self else { return }
@@ -89,16 +89,18 @@ extension ArticleTableViewController {
         case .success(let model):
           let unsorted = model as [Article]
           self.model = unsorted.sorted().reversed()
-          
           self.getTodaysArticles(from: self.model)
         case .failure(let error):
           print(error)
       }
       self.tableView.reloadData()
     }
+    self.showCorrectView(model: self.todaysArticles)
   }
+}
   
-  // Filetering Articles by Date
+// Filetering Articles by Date
+extension ArticleTableViewController {
   func getTodaysArticles(from articles: [Article]) {
     formatter.locale = Locale(identifier: "en_US")
     formatter.setLocalizedDateFormatFromTemplate("MMMMdd")
@@ -110,6 +112,18 @@ extension ArticleTableViewController {
           todaysArticles.append(article)
         }
       }
+    }
+  }
+}
+
+// If
+extension ArticleTableViewController {
+  func showCorrectView(model: [Article]) {
+    if self.model.count == 0 {
+      print("poop")
+//      view.backgroundColor = .blue
+      let nopeVC = NoFloridaManViewController()
+      show(nopeVC, sender: self)
     }
   }
 }

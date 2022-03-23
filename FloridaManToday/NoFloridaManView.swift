@@ -37,13 +37,13 @@ extension NoFloridaManView {
     stack.spacing = 32
     
     headline.translatesAutoresizingMaskIntoConstraints = false
-    headline.font = .preferredFont(forTextStyle: .largeTitle)
+    headline.font = .preferredFont(forTextStyle: .title1)
     headline.text = "No Florida Man Today"
     headline.textAlignment = .center
     
     image.translatesAutoresizingMaskIntoConstraints = false
-    image.image = UIImage(systemName: "r.joystick.tilt.up")
-    image.tintColor = .black
+    image.image = UIImage(named: "fm1")?.withTintColor(.label)
+    image.tintColor = .label
     
     descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
     descriptionLabel.font = .preferredFont(forTextStyle: .body)

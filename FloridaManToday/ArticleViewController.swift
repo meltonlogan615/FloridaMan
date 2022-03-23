@@ -5,7 +5,6 @@
 //  Created by Logan Melton on 2/21/22.
 //
 
-import Foundation
 import UIKit
 import WebKit
 
@@ -18,8 +17,6 @@ class ArticleViewController: UIViewController, WKNavigationDelegate {
     webView = WKWebView()
     webView.navigationDelegate = self
     view = webView
-    
-    view.backgroundColor = .systemGray5
   }
   
   override func viewDidLoad() {
@@ -36,7 +33,6 @@ class ArticleViewController: UIViewController, WKNavigationDelegate {
 
 extension ArticleViewController {
   func style() {
-    navigationController?.navigationBar.tintColor = UIColor(named: "FM-Blue")
     navigationController?.navigationBar.isOpaque = false
     navigationController?.navigationBar.backgroundColor = view.backgroundColor
 //    webView.topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 1).isActive = true

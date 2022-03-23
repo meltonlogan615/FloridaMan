@@ -31,7 +31,7 @@ class SettingsViewController: UIViewController {
     super.viewDidLoad()
     self.title = "Settings"
     navigationController?.navigationBar.prefersLargeTitles = true
-    view.backgroundColor = .systemGray5
+    view.backgroundColor = UIColor(named: "FM-Blue")
 
     style()
     layout()
@@ -48,7 +48,7 @@ extension SettingsViewController {
     versionLabel.label.text = "Version"
     
     versionRow.translatesAutoresizingMaskIntoConstraints = false
-    versionRow.infoLabel.text = "Version: \(source.version) - Released: Today"
+    versionRow.infoLabel.text = "Version: \(source.version)"
     
     sourceLabel.translatesAutoresizingMaskIntoConstraints = false
     sourceLabel.label.text = "Data Source & Inspiration"

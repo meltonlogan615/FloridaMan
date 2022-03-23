@@ -35,7 +35,6 @@ class SettingsLinkViewController: UIViewController, WKNavigationDelegate {
 
 extension SettingsLinkViewController {
   func style() {
-    navigationController?.navigationBar.tintColor = UIColor(named: "FM-Blue")
     navigationController?.navigationBar.isOpaque = true
     navigationController?.navigationBar.layer.opacity = 0.9
   }

@@ -22,7 +22,6 @@ class SettingsRow: UIView {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    backgroundColor = .clear
     style()
     layout()
   }
@@ -37,7 +36,7 @@ extension SettingsRow {
   func style() {
     translatesAutoresizingMaskIntoConstraints = false
     
-    backgroundColor = .systemGray3
+    backgroundColor = UIColor(named: "FM-Orange")
     layer.cornerRadius = 8
     clipsToBounds = true
     
@@ -50,7 +49,7 @@ extension SettingsRow {
     linkButton.translatesAutoresizingMaskIntoConstraints = false
     linkButton.configuration = .borderless()
     linkButton.configuration?.buttonSize = .large
-    linkButton.tintColor = .link
+    linkButton.tintColor = .label
     linkButton.isHidden = true
   }
   

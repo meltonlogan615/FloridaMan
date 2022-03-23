@@ -176,8 +176,8 @@
 		324D101727D053A20052E62A /* SettingsViews */ = {
 			isa = PBXGroup;
 			children = (
-				324D101027CE66350052E62A /* SettingsRow.swift */,
 				324D101C27D2F4B30052E62A /* SettingsLabelRow.swift */,
+				324D101027CE66350052E62A /* SettingsRow.swift */,
 			);
 			name = SettingsViews;
 			sourceTree = "<group>";
@@ -498,6 +498,7 @@
 				DEVELOPMENT_TEAM = VR7223ZYQY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FloridaManToday/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Florida Man";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -526,6 +527,7 @@
 				DEVELOPMENT_TEAM = VR7223ZYQY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FloridaManToday/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Florida Man";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

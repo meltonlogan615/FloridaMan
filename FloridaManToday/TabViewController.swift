@@ -26,21 +26,13 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
     let settingsTabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear.circle"), selectedImage: UIImage(systemName: "gear.circle.fill"))
     settingsTab.tabBarItem = settingsTabBarItem
     
-    let nope = UINavigationController(rootViewController: NoFloridaManViewController())
-    let nopeTabBarItem = UITabBarItem(title: "Nope", image: UIImage(systemName: "gear.circle"), selectedImage: UIImage(systemName: "gear.circle.fill"))
-    nope.tabBarItem = nopeTabBarItem
-
-    self.viewControllers = [tableTab, dateSearch, settingsTab, nope]
+    self.viewControllers = [tableTab, dateSearch, settingsTab]
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     self.delegate = self
     self.tabBar.tintColor = .darkGray
-    self.tabBar.backgroundColor = .systemGray4
   }
-  
-  
-  
 }
 

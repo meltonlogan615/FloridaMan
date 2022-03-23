@@ -30,7 +30,7 @@ extension SettingsLabelRow {
     
     label.translatesAutoresizingMaskIntoConstraints = false
     label.font = UIFont.systemFont(ofSize: 14, weight: .light)
-    label.textColor = .gray
+    label.textColor = .label
     label.textAlignment = .natural
   }
   

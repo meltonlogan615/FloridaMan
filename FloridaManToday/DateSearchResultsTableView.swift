@@ -22,10 +22,7 @@ class DateSearchResultsTableView: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "Florida Man: \(displayedDate)"
-    
-    view.backgroundColor = .systemGray5
-    navigationController?.navigationBar.tintColor = UIColor(named: "FM-Blue")
-    
+    view.backgroundColor = UIColor(named: "FM-Blue")
     tableView.dataSource = self
     tableView.delegate = self
     tableView.register(ArticleCell.self, forCellReuseIdentifier: "cell")

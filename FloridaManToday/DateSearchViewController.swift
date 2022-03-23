@@ -5,8 +5,6 @@
 //  Created by Logan Melton on 2/28/22.
 //
 
-import Foundation
-
 import UIKit
 
 class DateSearchViewController: UIViewController {
@@ -21,7 +19,7 @@ class DateSearchViewController: UIViewController {
     
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = .systemGray5
+    view.backgroundColor = UIColor(named: "FM-Blue")
     self.title = "Search"
     navigationController?.navigationBar.prefersLargeTitles = true
     style()
