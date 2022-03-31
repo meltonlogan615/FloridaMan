@@ -12,16 +12,18 @@ import UIKit
 class DateSearchResultsTableView: UITableViewController {
   
   let dataprovider = DataProvider()
-    
+  
   var selectedDate = String()
   var displayedDate = String()
+  let formatter = DateFormatter()
   
-  var results = [Article]()
+  var model = [Article]()
   var articlesForDate = [Article]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "Florida Man: \(displayedDate)"
+    navigationController?.navigationBar.tintColor = .label
     view.backgroundColor = UIColor(named: "FM-Blue")
     tableView.dataSource = self
     tableView.delegate = self
@@ -65,30 +67,47 @@ extension DateSearchResultsTableView {
 }
 
 extension DateSearchResultsTableView {
-  
   func getFMArticles() {
     dataprovider.getArticle(for: "") { [weak self] (floridaMan: Result<[Article], Error>) in
       guard let self = self else { return }
       switch floridaMan {
         case .success(let model):
           let unsorted = model as [Article]
-          self.results = unsorted.sorted()
-          self.getSelectedDateArticles(from: self.results)
+          self.model = unsorted.sorted().reversed()
+          self.getSelectedDateArticles(from: self.model)
         case .failure(let error):
           print(error)
       }
-      self.tableView.reloadData()
+      if self.articlesForDate.isEmpty {
+        self.showNope()
+      } else {
+        self.tableView.reloadData()
+      }
     }
   }
-  
+}
+
+extension DateSearchResultsTableView: PassingDate {
   func getSelectedDateArticles(from articles: [Article]) {
+    formatter.locale = Locale(identifier: "en_US")
+    formatter.setLocalizedDateFormatFromTemplate("MMMMdd")
     for article in articles {
       let articleTime = article.time.dropLast(6)
       if self.selectedDate == articleTime {
-        if !articlesForDate.contains(article) {
+        if articlesForDate.contains(article) {
+          continue
+        } else {
           self.articlesForDate.append(article)
         }
       }
     }
+  }
+}
+
+extension DateSearchResultsTableView {
+  /// Checks to see if the todaysArticles array is empty. If it is, shows NoFloridaManViewController, else shows the ArticleTableViewController as per its default
+  func showNope() {
+      let nopeVC = NoFloridaManViewController()
+      show(nopeVC, sender: self)
   }
 }

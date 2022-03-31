@@ -24,7 +24,7 @@ class ArticleTableViewController: UITableViewController {
     self.title = "Today"
     navigationController?.navigationBar.prefersLargeTitles = true
     view.backgroundColor = UIColor(named: "FM-Blue")
-
+    
     tableView.register(ArticleCell.self, forCellReuseIdentifier: "cell")
     tableView.rowHeight = UITableView.automaticDimension
     tableView.estimatedRowHeight = 600.0
@@ -93,14 +93,18 @@ extension ArticleTableViewController {
         case .failure(let error):
           print(error)
       }
-      self.tableView.reloadData()
+      if self.model.isEmpty {
+        self.showCorrectView(model: self.todaysArticles)
+      } else {
+        self.tableView.reloadData()
+      }
     }
-    self.showCorrectView(model: self.todaysArticles)
   }
 }
-  
+
 // Filetering Articles by Date
 extension ArticleTableViewController {
+  /// Takes the returned data, compares a formated date against the model's time property and adds those that match to the todaysArticles array while filtering duplicates
   func getTodaysArticles(from articles: [Article]) {
     formatter.locale = Locale(identifier: "en_US")
     formatter.setLocalizedDateFormatFromTemplate("MMMMdd")
@@ -116,18 +120,15 @@ extension ArticleTableViewController {
   }
 }
 
-// If
 extension ArticleTableViewController {
+  /// Checks to see if the todaysArticles array is empty. If it is, shows NoFloridaManViewController, else shows the ArticleTableViewController as per its default
   func showCorrectView(model: [Article]) {
-    if self.model.count == 0 {
-      print("poop")
-//      view.backgroundColor = .blue
-      let nopeVC = NoFloridaManViewController()
-      show(nopeVC, sender: self)
-    }
+    let nopeVC = NoFloridaManViewController()
+    nopeVC.navigationController?.isNavigationBarHidden = true
+    show(nopeVC, sender: self)
   }
 }
 
 
-  
-  
+
+

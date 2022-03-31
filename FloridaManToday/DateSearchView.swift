@@ -38,9 +38,9 @@ extension DateSearchView {
     picker.isUserInteractionEnabled = true
     
     searchButton.translatesAutoresizingMaskIntoConstraints = false
-    searchButton.configuration = .plain()
+    searchButton.configuration = .bordered()
     searchButton.configuration?.buttonSize = .large
-    searchButton.tintColor = .link
+    searchButton.tintColor = UIColor(named: "FM-Purple")
     searchButton.setTitle("Git'em", for: [])
   }
   

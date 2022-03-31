@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol PassingDate {
+  func getSelectedDateArticles(from articles: [Article])
+}
+
 class DateSearchViewController: UIViewController {
   
   let searchView = DateSearchView()
@@ -67,6 +71,15 @@ extension DateSearchViewController {
   
   @objc func searchButtonPressed(_ sender: UIButton) {
     let resutlsVC = DateSearchResultsTableView()
+    if self.selectedDate == "" {
+      formatter.locale = Locale(identifier: "en_US")
+      formatter.setLocalizedDateFormatFromTemplate("MMMMdd")
+      self.selectedDate = formatter.string(from: pickerDate)
+      displayFormatter.locale = Locale(identifier: "en_US")
+      displayFormatter.setLocalizedDateFormatFromTemplate("MMMdd")
+      self.displayDate = displayFormatter.string(from: pickerDate)
+
+    }
     resutlsVC.selectedDate = self.selectedDate
     resutlsVC.displayedDate = self.displayDate
     navigationController?.pushViewController(resutlsVC, animated: true)

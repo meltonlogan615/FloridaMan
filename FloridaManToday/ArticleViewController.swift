@@ -12,6 +12,7 @@ class ArticleViewController: UIViewController, WKNavigationDelegate {
   
   var webView: WKWebView!
   var articleURL = String()
+  let preferences = WKWebpagePreferences()
     
   override func loadView() {
     webView = WKWebView()
@@ -26,8 +27,12 @@ class ArticleViewController: UIViewController, WKNavigationDelegate {
     webView.load(URLRequest(url: url))
     webView.allowsBackForwardNavigationGestures = true
     navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(presentShareSheet))
-    
+    navigationController?.navigationBar.tintColor = .label
     style()
+  }
+  
+  override func viewDidDisappear(_ animated: Bool) {
+    webViewWebContentProcessDidTerminate(webView)
   }
 }
 
@@ -50,4 +55,9 @@ extension ArticleViewController {
   }
 }
 
+extension ArticleViewController {
+  func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
+    print("RaA")
+  }
+}
 

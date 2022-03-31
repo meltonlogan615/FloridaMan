@@ -36,7 +36,7 @@ extension SettingsRow {
   func style() {
     translatesAutoresizingMaskIntoConstraints = false
     
-    backgroundColor = UIColor(named: "FM-Orange")
+    backgroundColor = UIColor(named: "FM-Yellow")
     layer.cornerRadius = 8
     clipsToBounds = true
     

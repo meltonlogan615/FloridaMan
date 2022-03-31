@@ -30,7 +30,6 @@ extension EndPoints {
   static func getFloridaMan(for searched: String) -> EndPoints {
     return EndPoints()
   }
-  
 }
 
 // Later, if additional endpoints or API provided functionality added, w will ned to futher extend EndPoints to generate the url & create the static func to recive the data that will be passed back in.
