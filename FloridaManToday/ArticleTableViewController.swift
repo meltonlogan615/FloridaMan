@@ -17,6 +17,9 @@ class ArticleTableViewController: UITableViewController {
   let today = Date()
   let formatter = DateFormatter()
   
+  override func viewWillAppear(_ animated: Bool) {
+    getFMArticles()
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -48,6 +51,11 @@ extension ArticleTableViewController {
       cell.headlineLabel.textColor = .white
       cell.sourceLabel.textColor = .white
       cell.dateLabel.textColor = .white
+    } else {
+      cell.backgroundColor = UIColor(named: "FM-Yellow")
+      cell.headlineLabel.textColor = UIColor(named: "FM-Purple")
+      cell.sourceLabel.textColor = UIColor(named: "FM-Purple")
+      cell.dateLabel.textColor = UIColor(named: "FM-Purple")
     }
     cell.headlineLabel.text = article.title.capitalized
     cell.sourceLabel.text = article.domain
@@ -72,7 +80,7 @@ extension ArticleTableViewController {
     cell.alpha = 0
     
     UIView.animate(
-      withDuration: 0.5,
+      withDuration: 0.75,
       delay: 0.1 * Double(indexPath.row),
       animations: {
         cell.alpha = 1
@@ -93,8 +101,8 @@ extension ArticleTableViewController {
         case .failure(let error):
           print(error)
       }
-      if self.model.isEmpty {
-        self.showCorrectView(model: self.todaysArticles)
+      if self.todaysArticles.isEmpty {
+        self.showNopeView()
       } else {
         self.tableView.reloadData()
       }
@@ -122,9 +130,8 @@ extension ArticleTableViewController {
 
 extension ArticleTableViewController {
   /// Checks to see if the todaysArticles array is empty. If it is, shows NoFloridaManViewController, else shows the ArticleTableViewController as per its default
-  func showCorrectView(model: [Article]) {
+  func showNopeView() {
     let nopeVC = NoFloridaManViewController()
-    nopeVC.navigationController?.isNavigationBarHidden = true
     show(nopeVC, sender: self)
   }
 }

@@ -10,10 +10,13 @@ import UIKit
 class NoFloridaManViewController: UIViewController {
   
   let nopeView = NoFloridaManView()
+  var showNav = true
   
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = UIColor(named: "FM-Blue")
+    navigationController?.navigationBar.tintColor = .label
+    navigationController?.isNavigationBarHidden = showNav
     style()
     layout()
   }

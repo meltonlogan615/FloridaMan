@@ -40,7 +40,7 @@ extension DateSearchView {
     searchButton.translatesAutoresizingMaskIntoConstraints = false
     searchButton.configuration = .bordered()
     searchButton.configuration?.buttonSize = .large
-    searchButton.tintColor = UIColor(named: "FM-Purple")
+    searchButton.tintColor = .label
     searchButton.setTitle("Git'em", for: [])
   }
   
@@ -55,6 +55,7 @@ extension DateSearchView {
     
     NSLayoutConstraint.activate([
       searchButton.topAnchor.constraint(equalToSystemSpacingBelow: picker.bottomAnchor, multiplier: 2),
+      searchButton.widthAnchor.constraint(equalTo: picker.widthAnchor),
       searchButton.trailingAnchor.constraint(equalTo: picker.trailingAnchor)
     ])
   }

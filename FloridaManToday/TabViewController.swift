@@ -23,7 +23,7 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
     dateSearch.tabBarItem = dateSearchTabBarITem
     
     let settingsTab = UINavigationController(rootViewController: SettingsViewController())
-    let settingsTabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear.circle"), selectedImage: UIImage(systemName: "gear.circle.fill"))
+    let settingsTabBarItem = UITabBarItem(title: "Info", image: UIImage(systemName: "info.circle"), selectedImage: UIImage(systemName: "info.circle.fill"))
     settingsTab.tabBarItem = settingsTabBarItem
     
     self.viewControllers = [tableTab, dateSearch, settingsTab]
