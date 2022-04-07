@@ -34,6 +34,19 @@
 		32AB130127BF5C2900515D5F /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB130027BF5C2900515D5F /* ArticleCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		320C1CD427F8D5D7008AF2A7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		320F348B27D87DB60064052C /* NoFloridaManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFloridaManViewController.swift; sourceTree = "<group>"; };
 		320F348D27D87DDC0064052C /* NoFloridaManView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFloridaManView.swift; sourceTree = "<group>"; };
@@ -270,6 +283,7 @@
 				32AB12DA27BF5A3A00515D5F /* Sources */,
 				32AB12DB27BF5A3A00515D5F /* Frameworks */,
 				32AB12DC27BF5A3A00515D5F /* Resources */,
+				320C1CD427F8D5D7008AF2A7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -287,7 +301,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					32AB12DD27BF5A3A00515D5F = {

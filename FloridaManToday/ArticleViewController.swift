@@ -28,19 +28,14 @@ class ArticleViewController: UIViewController, WKNavigationDelegate {
     webView.allowsBackForwardNavigationGestures = true
     navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(presentShareSheet))
     navigationController?.navigationBar.tintColor = .label
+    navigationController?.navigationBar.isOpaque = true
     style()
-  }
-  
-  override func viewDidDisappear(_ animated: Bool) {
-    webViewWebContentProcessDidTerminate(webView)
   }
 }
 
 extension ArticleViewController {
   func style() {
-    navigationController?.navigationBar.isOpaque = false
     navigationController?.navigationBar.backgroundColor = view.backgroundColor
-//    webView.topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 1).isActive = true
   }
 }
 
@@ -55,9 +50,4 @@ extension ArticleViewController {
   }
 }
 
-extension ArticleViewController {
-  func webViewWebContentProcessDidTerminate(_ webView: WKWebView) {
-    print("RaA")
-  }
-}
 

@@ -9,34 +9,36 @@ import Foundation
 
 import UIKit
 
+protocol PassingDate {
+  func getSelectedDateArticles(from articles: [Article])
+}
+
+
 class DateSearchResultsTableView: UITableViewController {
-  
-  let dataprovider = DataProvider()
-  
-  var selectedDate = String()
+    
   var displayedDate = String()
-  let formatter = DateFormatter()
   
-  var model = [Article]()
   var articlesForDate = [Article]()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     title = "Florida Man: \(displayedDate)"
     navigationController?.navigationBar.tintColor = .label
+    navigationController?.navigationBar.prefersLargeTitles = true
     view.backgroundColor = UIColor(named: "FM-Blue")
+    title = displayedDate
     tableView.dataSource = self
     tableView.delegate = self
     tableView.register(ArticleCell.self, forCellReuseIdentifier: "cell")
-    getFMArticles()
+    tableView.reloadData()
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    articlesForDate.removeAll()
   }
 }
 
 extension DateSearchResultsTableView {
-  override func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
-  }
-  
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return articlesForDate.count
   }
@@ -67,47 +69,19 @@ extension DateSearchResultsTableView {
 }
 
 extension DateSearchResultsTableView {
-  func getFMArticles() {
-    dataprovider.getArticle(for: "") { [weak self] (floridaMan: Result<[Article], Error>) in
-      guard let self = self else { return }
-      switch floridaMan {
-        case .success(let model):
-          let unsorted = model as [Article]
-          self.model = unsorted.sorted().reversed()
-          self.getSelectedDateArticles(from: self.model)
-        case .failure(let error):
-          print(error)
-      }
-      if self.articlesForDate.isEmpty {
-        self.showNope()
-      } else {
-        self.tableView.reloadData()
-      }
-    }
+  override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    cell.alpha = 0
+    print("I dooz it")
+    UIView.animate(
+      withDuration: 0.75,
+      delay: 0.1 * Double(indexPath.row),
+      animations: {
+        cell.alpha = 1
+      })
   }
 }
 
-extension DateSearchResultsTableView: PassingDate {
-  func getSelectedDateArticles(from articles: [Article]) {
-    formatter.locale = Locale(identifier: "en_US")
-    formatter.setLocalizedDateFormatFromTemplate("MMMMdd")
-    for article in articles {
-      let articleTime = article.time.dropLast(6)
-      if self.selectedDate == articleTime {
-        if articlesForDate.contains(article) {
-          continue
-        } else {
-          self.articlesForDate.append(article)
-        }
-      }
-    }
-  }
-}
 
-extension DateSearchResultsTableView {
-  /// Checks to see if the todaysArticles array is empty. If it is, shows NoFloridaManViewController, else shows the ArticleTableViewController as per its default
-  func showNope() {
-      let nopeVC = NoFloridaManViewController()
-      show(nopeVC, sender: self)
-  }
-}
+
+
+
