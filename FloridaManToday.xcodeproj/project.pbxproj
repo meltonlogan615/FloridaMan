@@ -32,6 +32,7 @@
 		32AB12EE27BF5A3B00515D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AB12EC27BF5A3B00515D5F /* LaunchScreen.storyboard */; };
 		32AB12FD27BF5B6A00515D5F /* ArticleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB12FC27BF5B6A00515D5F /* ArticleTableViewController.swift */; };
 		32AB130127BF5C2900515D5F /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB130027BF5C2900515D5F /* ArticleCell.swift */; };
+		32AB724027FF85E000AF0E2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AB723F27FF85E000AF0E2A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +76,7 @@
 		32AB12EF27BF5A3B00515D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32AB12FC27BF5B6A00515D5F /* ArticleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewController.swift; sourceTree = "<group>"; };
 		32AB130027BF5C2900515D5F /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		32AB723F27FF85E000AF0E2A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 			children = (
 				324D0FD027C313190052E62A /* ArticleModel.swift */,
 				324D0FD427C4B2A80052E62A /* Glyphs.swift */,
+				32AB723F27FF85E000AF0E2A /* Constants.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324D0FD527C4B2A80052E62A /* Glyphs.swift in Sources */,
+				32AB724027FF85E000AF0E2A /* Constants.swift in Sources */,
 				324D0FC927C311E90052E62A /* NetworkAccess.swift in Sources */,
 				324D101127CE66350052E62A /* SettingsRow.swift in Sources */,
 				32AB130127BF5C2900515D5F /* ArticleCell.swift in Sources */,
@@ -517,6 +521,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Florida Man";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -547,6 +552,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Florida Man";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

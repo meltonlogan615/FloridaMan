@@ -26,7 +26,7 @@ class ArticleTableViewController: UITableViewController {
     
     self.title = "Today"
     navigationController?.navigationBar.prefersLargeTitles = true
-    view.backgroundColor = UIColor(named: "FM-Blue")
+    view.backgroundColor = K.blue
     
     tableView.register(ArticleCell.self, forCellReuseIdentifier: "cell")
     tableView.rowHeight = UITableView.automaticDimension
@@ -47,15 +47,15 @@ extension ArticleTableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArticleCell
     let article = todaysArticles[indexPath.row]
     if indexPath.row % 2 == 0 {
-      cell.backgroundColor = UIColor(named: "FM-Red")
+      cell.backgroundColor = K.red
       cell.headlineLabel.textColor = .white
       cell.sourceLabel.textColor = .white
       cell.dateLabel.textColor = .white
     } else {
-      cell.backgroundColor = UIColor(named: "FM-Yellow")
-      cell.headlineLabel.textColor = UIColor(named: "FM-Purple")
-      cell.sourceLabel.textColor = UIColor(named: "FM-Purple")
-      cell.dateLabel.textColor = UIColor(named: "FM-Purple")
+      cell.backgroundColor = K.yellow
+      cell.headlineLabel.textColor = K.purple
+      cell.sourceLabel.textColor = K.purple
+      cell.dateLabel.textColor = K.purple
     }
     cell.headlineLabel.text = article.title.capitalized
     cell.sourceLabel.text = article.domain

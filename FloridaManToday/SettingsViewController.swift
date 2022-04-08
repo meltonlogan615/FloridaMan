@@ -12,9 +12,7 @@ import UIKit
 class SettingsViewController: UIViewController {
   
   let settingsStack = UIStackView()
-  
-  let source = SourceInfo()
-  
+    
   let versionLabel = SettingsLabelRow()
   let versionRow = SettingsRow()
   
@@ -29,9 +27,9 @@ class SettingsViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.title = "Settings"
+    self.title = "Info"
     navigationController?.navigationBar.prefersLargeTitles = true
-    view.backgroundColor = UIColor(named: "FM-Blue")
+    view.backgroundColor = K.blue
 
     style()
     layout()
@@ -48,7 +46,7 @@ extension SettingsViewController {
     versionLabel.label.text = "Version"
     
     versionRow.translatesAutoresizingMaskIntoConstraints = false
-    versionRow.infoLabel.text = "Version: \(source.version)"
+    versionRow.infoLabel.text = "Version: \(L.version)"
     
     sourceLabel.translatesAutoresizingMaskIntoConstraints = false
     sourceLabel.label.text = "Data Source & Inspiration"
@@ -106,11 +104,11 @@ extension SettingsViewController {
     let selected = sender.tag
     switch selected {
       case 0:
-        linkVC.articleURL = source.sourceURL
+        linkVC.articleURL = L.sourceURL
       case 1:
-        linkVC.articleURL = source.sourceArticleURL
+        linkVC.articleURL = L.sourceArticleURL
       case 2:
-        linkVC.articleURL = source.twitter
+        linkVC.articleURL = L.twitter
       default:
         break
     }

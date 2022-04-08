@@ -24,12 +24,6 @@ struct Article: Decodable, Identifiable, Hashable, Comparable {
   }
 }
 
-struct SourceInfo {
-  let sourceURL = "https://www.kmcelwee.com/florida/"
-  let sourceArticleURL = "https://towardsdatascience.com/explore-a-database-of-the-most-popular-florida-man-headlines-cec6f62c8360"
-  let version = "1.0"
-  let twitter = "https://twitter.com/StinkyStinkFace"
-}
 
 // image attribution: <a href="https://www.freepik.com/vectors/background">Background vector created by freepik - www.freepik.com</a>
 // <a href="https://www.freepik.com/vectors/background">Background vector created by pikisuperstar - www.freepik.com</a>

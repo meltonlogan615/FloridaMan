@@ -27,7 +27,7 @@ class DateSearchViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = UIColor(named: "FM-Blue")
+    view.backgroundColor = K.blue
     self.title = "Search"
     navigationController?.navigationBar.prefersLargeTitles = true
     style()

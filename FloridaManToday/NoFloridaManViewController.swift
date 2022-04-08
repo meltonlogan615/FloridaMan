@@ -14,7 +14,7 @@ class NoFloridaManViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = UIColor(named: "FM-Blue")
+    view.backgroundColor = K.blue
     navigationController?.navigationBar.tintColor = .label
     navigationController?.isNavigationBarHidden = showNav
     style()

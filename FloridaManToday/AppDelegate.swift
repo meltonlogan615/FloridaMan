@@ -13,12 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     let tabViewController = TabViewController()
-    
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.makeKeyAndVisible()
-    window?.backgroundColor = .systemBackground
+    window?.backgroundColor = K.blue
     window?.rootViewController = tabViewController
-    
     return true
   }
 }

@@ -62,8 +62,7 @@ class ArticleCell: UITableViewCell {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     self.isAccessibilityElement = true
     
-    backgroundColor = UIColor(named: "FM-Yellow")
-    
+    backgroundColor = K.yellow
     labelStack.addArrangedSubview(dateLabel)
     labelStack.addArrangedSubview(sourceLabel)
     
