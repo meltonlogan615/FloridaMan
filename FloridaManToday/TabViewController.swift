@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class TabViewController: UITabBarController, UITabBarControllerDelegate {
+  
+  let appearance = UITabBarAppearance()
     
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -27,12 +29,17 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
     settingsTab.tabBarItem = settingsTabBarItem
     
     self.viewControllers = [tableTab, dateSearch, settingsTab]
+    print("Will Appear")
   }
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
     self.delegate = self
-    self.tabBar.tintColor = .darkGray
+    appearance.backgroundColor = K.blue
+    tabBar.standardAppearance = appearance
+    self.tabBar.tintColor = K.red
+    print("Did Load")
   }
 }
 

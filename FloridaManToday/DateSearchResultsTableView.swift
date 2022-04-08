@@ -25,16 +25,12 @@ class DateSearchResultsTableView: UITableViewController {
     title = "Florida Man: \(displayedDate)"
     navigationController?.navigationBar.tintColor = .label
     navigationController?.navigationBar.prefersLargeTitles = true
-    view.backgroundColor = UIColor(named: "FM-Blue")
+    view.backgroundColor = K.blue
     title = displayedDate
     tableView.dataSource = self
     tableView.delegate = self
     tableView.register(ArticleCell.self, forCellReuseIdentifier: "cell")
     tableView.reloadData()
-  }
-  
-  override func viewWillDisappear(_ animated: Bool) {
-    articlesForDate.removeAll()
   }
 }
 
@@ -47,10 +43,15 @@ extension DateSearchResultsTableView {
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ArticleCell
     let article = articlesForDate[indexPath.row]
     if indexPath.row % 2 == 0 {
-      cell.backgroundColor = UIColor(named: "FM-Red")
+      cell.backgroundColor = K.red
       cell.headlineLabel.textColor = .white
       cell.sourceLabel.textColor = .white
       cell.dateLabel.textColor = .white
+    } else {
+      cell.backgroundColor = K.yellow
+      cell.headlineLabel.textColor = K.purple
+      cell.sourceLabel.textColor = K.purple
+      cell.dateLabel.textColor = K.purple
     }
     cell.headlineLabel.text = article.title.capitalized
     cell.dateLabel.text = article.time
@@ -71,7 +72,6 @@ extension DateSearchResultsTableView {
 extension DateSearchResultsTableView {
   override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     cell.alpha = 0
-    print("I dooz it")
     UIView.animate(
       withDuration: 0.75,
       delay: 0.1 * Double(indexPath.row),

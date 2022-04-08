@@ -42,7 +42,7 @@ extension NoFloridaManView {
     headline.textAlignment = .center
     
     image.translatesAutoresizingMaskIntoConstraints = false
-    image.image = UIImage(named: "fm1")?.withTintColor(UIColor(named: "FM-Purple")!)
+    image.image = UIImage(named: "fm1")?.withTintColor(K.purple!)
     image.tintColor = .label
     
     descriptionLabel.translatesAutoresizingMaskIntoConstraints = false

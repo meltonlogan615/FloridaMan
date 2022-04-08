@@ -36,7 +36,7 @@ extension SettingsRow {
   func style() {
     translatesAutoresizingMaskIntoConstraints = false
     
-    backgroundColor = UIColor(named: "FM-Yellow")
+    backgroundColor = K.yellow
     layer.cornerRadius = 8
     clipsToBounds = true
     
@@ -49,7 +49,7 @@ extension SettingsRow {
     linkButton.translatesAutoresizingMaskIntoConstraints = false
     linkButton.configuration = .borderless()
     linkButton.configuration?.buttonSize = .large
-    linkButton.tintColor = .label
+    linkButton.tintColor = K.purple
     linkButton.isHidden = true
   }
   

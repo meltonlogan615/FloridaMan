@@ -23,12 +23,9 @@ class DateSearchView: UIView {
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  
-
 }
 
 extension DateSearchView {
-  
   func style() {
     translatesAutoresizingMaskIntoConstraints = false
     picker.translatesAutoresizingMaskIntoConstraints = false
@@ -38,10 +35,12 @@ extension DateSearchView {
     picker.isUserInteractionEnabled = true
     
     searchButton.translatesAutoresizingMaskIntoConstraints = false
-    searchButton.configuration = .bordered()
     searchButton.configuration?.buttonSize = .large
-    searchButton.tintColor = .label
+    searchButton.backgroundColor = K.yellow
+    searchButton.layer.cornerRadius = 8
+    searchButton.clipsToBounds = true
     searchButton.setTitle("Git'em", for: [])
+    searchButton.setTitleColor(K.purple, for: [])
   }
   
   func layout() {
@@ -56,7 +55,7 @@ extension DateSearchView {
     NSLayoutConstraint.activate([
       searchButton.topAnchor.constraint(equalToSystemSpacingBelow: picker.bottomAnchor, multiplier: 2),
       searchButton.widthAnchor.constraint(equalTo: picker.widthAnchor),
-      searchButton.trailingAnchor.constraint(equalTo: picker.trailingAnchor)
+      searchButton.centerXAnchor.constraint(equalTo: centerXAnchor)
     ])
   }
 }
